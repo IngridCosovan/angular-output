@@ -9,11 +9,25 @@ export class ChildComponent implements OnInit {
   @Output() greetEvent = new EventEmitter();
   name = 'CCC';
 
+  @Output() outSayHi = new EventEmitter();
+  desire = 'icecream';
+
+  @Output() adGiven = new EventEmitter();
+  drink = 'cola';
+
   constructor() {}
 
   ngOnInit() {}
 
   callParentGreet() {
     this.greetEvent.emit(this.name);
+  }
+
+  sayHi() {
+    this.outSayHi.emit(this.desire);
+  }
+
+  giveAd() {
+    this.adGiven.emit(this.drink);
   }
 }
