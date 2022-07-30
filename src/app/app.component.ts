@@ -12,15 +12,10 @@ export class AppComponent {
     alert('Hello ' + name);
   }
 
-
   hi(name: string) {
     alert('I want to eat ' + name);
   }
 
-  ad(drink: string) {
-    alert('I advice you to not drink ' + drink)
-  }
-  
   addItem(newItem: string) {
     this.items.push(newItem);
   }

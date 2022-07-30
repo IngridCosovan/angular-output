@@ -4,10 +4,10 @@
 <h2>Child Component 2nd trial</h2>
 <button (click)="sayHi()">Push Me!</button>
 
-<h2>Child Component 3rd trial</h2>
-<button (click)="giveAd()">Button</button>
-
 <h2>Child Component 4th trial</h2>
 <label for="item-input">Add an item:</label>
-<input type="text" id="item-input" #newItem>
-<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+<input type="text" id="item-input" #newItem />
+<p></p>
+<button type="button" (click)="addNewItem(newItem.value)">
+  Add to parent's list
+</button>

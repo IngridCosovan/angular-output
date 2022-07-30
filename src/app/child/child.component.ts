@@ -12,9 +12,6 @@ export class ChildComponent implements OnInit {
   @Output() outSayHi = new EventEmitter();
   desire = 'icecream';
 
-  @Output() adGiven = new EventEmitter();
-  drink = 'cola';
-
   @Output() newItemEvent = new EventEmitter<string>();
 
   constructor() {}
@@ -27,10 +24,6 @@ export class ChildComponent implements OnInit {
 
   sayHi() {
     this.outSayHi.emit(this.desire);
-  }
-
-  giveAd() {
-    this.adGiven.emit(this.drink);
   }
 
   addNewItem(value: string) {

@@ -1,7 +1,8 @@
 <h1>Parent Component</h1>
 
 <app-child (greetEvent)="greet($event)" (outSayHi)="hi($event)"
-(adGiven)="ad($event)" (newItemEvent)="addItem($event)"></app-child>
+(newItemEvent)="addItem($event)"></app-child>
+
 <ul>
 <li *ngFor="let item of items">{{item}}</li>
 </ul>
