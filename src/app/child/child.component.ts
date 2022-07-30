@@ -15,6 +15,8 @@ export class ChildComponent implements OnInit {
   @Output() adGiven = new EventEmitter();
   drink = 'cola';
 
+  @Output() newItemEvent = new EventEmitter<string>();
+
   constructor() {}
 
   ngOnInit() {}
@@ -29,5 +31,9 @@ export class ChildComponent implements OnInit {
 
   giveAd() {
     this.adGiven.emit(this.drink);
+  }
+
+  addNewItem(value: string) {
+    this.newItemEvent.emit(value);
   }
 }

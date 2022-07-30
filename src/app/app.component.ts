@@ -6,6 +6,8 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  items = ['item1', 'item2', 'item3', 'item4'];
+
   greet(name: string) {
     alert('Hello ' + name);
   }
@@ -17,5 +19,9 @@ export class AppComponent {
 
   ad(drink: string) {
     alert('I advice you to not drink ' + drink)
+  }
+  
+  addItem(newItem: string) {
+    this.items.push(newItem);
   }
 }
